@@ -1,0 +1,35 @@
+# usage: 
+# conda env remove -n spike_driven -y (remove existing environment)
+# conda env create -f environment.yml
+
+name: spike_driven
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - cudatoolkit=11.3.1
+  - numpy=1.23.0
+  - scipy
+  - matplotlib
+  - jinja2
+  - sympy
+  - fsspec
+  - filelock
+  - pyyaml
+  - importlib-metadata
+  - importlib-resources
+  - typing-extensions
+  - tqdm
+  - timm=0.6.12
+  - pip:
+      - torch==2.5.1+cu121
+      - torchvision==0.20.1+cu121
+      - torchaudio==2.5.1+cu121
+      - torchinfo==1.8.0
+      - spikingjelly==0.0.0.0.14
+      - cupy-cuda12x==13.4.1
+      - fastrlock==0.8.3
+      - triton==3.1.0
+      - --extra-index-url https://download.pytorch.org/whl/cu121
