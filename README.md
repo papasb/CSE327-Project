@@ -4,3 +4,5 @@ The other folders are failed or experiments that were not mentioned in the repor
 To make a folder for Spike-Driven codes, every code and file is copied from the original folder on the SUNY Korea BCL research Lab server, as it is being used by multiple users.
 To train the Spike-driven network, Spike-Driven/Myeongjun/train.sh is being used.
 Training results are saved in Myeongjun/RESULTS folder.
+
+The codes used for Spike-driven training are almost fully given from the paper named [_Spike-driven Transformer_](https://arxiv.org/pdf/2307.01694)
